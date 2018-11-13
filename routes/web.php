@@ -12,14 +12,23 @@
 */
 
 Route::get('test', function () {
-    return view('welcome');
+    return 5;
 
 });
-Route::get('page1', function () {
+Route::get('page01', function () {
+    return view('welcome1');
+});
+
+Route::get('page01/welcome', function () {
     return view('welcome1');
 
 });
+
 Route::get('page2', function () {
     return view('welcome2');
 
 });
+
+
+Route::get('welcomecontroller', 'HelloController@functionName');
+Route::get('welcomecontroller02', 'HelloController@functionName02');

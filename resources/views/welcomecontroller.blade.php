@@ -65,28 +65,14 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Enfant
+                    Controller mook
                 </div>
 
                 <div class="links">
-                    <a href="http://localhost/laravelhomework/homework/public/welcomecontroller">welcomecontroller</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="http://localhost/laravelhomework/homework/public/page01">Page01</a>
+                    <a href="http://localhost/laravelhomework/homework/public/page01/welcome">Welcome</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
